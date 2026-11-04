@@ -1504,6 +1504,59 @@
       color: #fff;
     }
     
+    .project-visit-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--accent-primary);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    
+    .project-visit-btn:hover {
+      color: #00e5ff;
+      transform: translateX(2px);
+    }
+    
+    .project-status-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-dim);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+
+    .project-badge-overlay {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(15, 20, 30, 0.85);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fbbf24;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      z-index: 2;
+    }
+
+    .project-badge-overlay.live {
+      color: #34d399;
+      border-color: rgba(52, 211, 153, 0.3);
+    }
+
     /* 3D Motion & Reveal Animations */
     .reveal {
       opacity: 0;
@@ -2102,6 +2155,51 @@
 
       <div class="new-projects-grid">
         
+        <!-- Project: Capiflux -->
+        <div class="new-project-card">
+          <div class="project-img-container">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Capiflux - Personal Finance Tracker">
+            <span class="project-badge-overlay"><i class="fa-solid fa-clock"></i> In Development</span>
+          </div>
+          <div class="project-content-box">
+            <div class="project-title-new">Capiflux — Personal Finance Tracker</div>
+            <div class="project-cat">Android (APK), Kotlin / Java</div>
+            <p class="project-desc-new">Personal finance tracking Android application (APK) designed to track expenses, manage budgets, and monitor savings habits. Currently in active development with private APK builds and not yet published on Google Play Store.</p>
+            <div class="project-footer">
+              <div class="project-tech-icons">
+                <i class="fa-brands fa-android" title="Android"></i>
+                <i class="fa-solid fa-wallet" title="Finance Tracking"></i>
+                <i class="fa-solid fa-database" title="Local Storage"></i>
+              </div>
+              <span class="project-status-tag" title="In Development • Private Repository (Unpublished APK)"><i class="fa-solid fa-lock"></i> Private Source</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Vidssavee -->
+        <div class="new-project-card">
+          <div class="project-img-container">
+            <img src="src/vidssavee.png" alt="Vidssavee - Video Downloader Website" style="object-fit: contain; background: #060814;">
+            <span class="project-badge-overlay live"><i class="fa-solid fa-circle" style="font-size: 0.5rem;"></i> Live App</span>
+          </div>
+          <div class="project-content-box">
+            <div class="project-title-new">Vidssavee — Video Downloader</div>
+            <div class="project-cat">React, Node.js</div>
+            <p class="project-desc-new">Web-based video downloader application built with a responsive React frontend and a Node.js backend to provide seamless video extraction and high-speed media downloading through an intuitive user interface.</p>
+            <div class="project-footer">
+              <div class="project-tech-icons">
+                <i class="fa-brands fa-react" title="React"></i>
+                <i class="fa-brands fa-node-js" title="Node.js"></i>
+                <i class="fa-solid fa-download" title="Video Downloader"></i>
+              </div>
+              <a href="https://vidssavee-ebon.vercel.app" target="_blank" rel="noopener noreferrer" class="project-visit-btn" title="Visit Live Website">
+                <span>Visit Live Website</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
         <!-- Project 1 -->
         <div class="new-project-card">
           <div class="project-img-container">
